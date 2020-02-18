@@ -1,1 +1,2 @@
-사용할 수 없는 패키지입니다.
+# CoolSMS SDK for Javascript
+이 패키지는 사용이 불가합니다.
