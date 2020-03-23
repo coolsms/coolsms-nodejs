@@ -1,40 +1,37 @@
 {
-  "name": "coolsms-sdk-v4",
-  "version": "4.0.15",
+  "name": "coolsms-node-sdk",
+  "version": "0.0.2",
+  "description": "Javascript 용 COOLSMS SDK Version 4",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node ./node_modules/standard/bin/cmd.js",
+    "test": "export NODE_ENV=test && npm run lint && ./node_modules/mocha/bin/mocha ./tests/**/*.js --require mocha-clean --reporter=mocha-better-spec-reporter --timeout=10000 --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coolsms/coolsms-sdk-js-v4.git"
+  },
+  "keywords": [],
   "author": "",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/coolsms/coolsms-sdk-js-v4/issues"
   },
-  "bundleDependencies": false,
+  "homepage": "https://github.com/coolsms/coolsms-sdk-js-v4#readme",
   "dependencies": {
     "crypto-js": "^3.1.9-1",
     "fs": "0.0.1-security",
     "moment": "^2.22.1",
+    "nanoid": "^2.0.3",
     "path": "^0.12.7",
     "qs": "^6.5.2",
-    "request": "^2.85.0",
-    "uniqid": "^4.1.1"
+    "request": "^2.85.0"
   },
-  "deprecated": "이 패키지는 사용하실 수 없습니다.",
-  "description": "Javascript 용 COOLSMS SDK Version 4",
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.0.5",
     "mocha-better-spec-reporter": "^3.1.0",
     "mocha-clean": "^1.0.0",
     "standard": "^11.0.1"
-  },
-  "homepage": "https://github.com/coolsms/coolsms-sdk-js-v4#readme",
-  "keywords": [],
-  "license": "MIT",
-  "main": "index.js",
-  "name": "coolsms-sdk-v4",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/coolsms/coolsms-sdk-js-v4.git"
-  },
-  "scripts": {
-    "lint": "node ./node_modules/standard/bin/cmd.js",
-    "test": "export NODE_ENV=test && npm run lint && ./node_modules/mocha/bin/mocha ./tests/**/*.js --require mocha-clean --reporter=mocha-better-spec-reporter --timeout=10000 --exit"
   }
 }
