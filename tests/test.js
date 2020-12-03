@@ -106,7 +106,7 @@ describe('test', () => {
       })
       expect(data.errorCount).to.equal(0)
       const result = await group.sendMessages()
-      expect(result).to.have.all.keys('app', 'balance', 'countForCharge', 'dateCompleted', 'dateSent', 'isRefunded', 'osPlatform', 'point', 'price', 'sdkVersion', 'count', 'log', 'status', '_id', 'groupId', 'accountId', 'apiVersion', 'dateCreated', 'dateUpdated', 'flagUpdated')
+      expect(result).to.have.all.keys('app', 'balance', 'countForCharge', 'dateCompleted', 'dateSent', 'isRefunded', 'osPlatform', 'point', 'price', 'sdkVersion', 'count', 'log', 'status', '_id', 'groupId', 'accountId', 'apiVersion', 'dateCreated', 'dateUpdated', 'flagUpdated', 'customFields', 'hint', 'masterAccountId', 'prepaid', 'serviceMethod', 'strict')
     })
     it('그룹 삭제 (정상)', async () => {
       const group = new Group()
@@ -127,7 +127,7 @@ describe('test', () => {
       const group = new Group()
       await group.createGroup()
       const data = await Group.getInfo(group.getGroupId())
-      expect(data).to.have.all.keys('app', 'balance', 'countForCharge', 'dateCompleted', 'dateSent', 'isRefunded', 'osPlatform', 'point', 'price', 'sdkVersion', 'count', 'log', 'status', '_id', 'groupId', 'accountId', 'apiVersion', 'dateCreated', 'dateUpdated', 'flagUpdated')
+      expect(data).to.have.all.keys('app', 'balance', 'countForCharge', 'dateCompleted', 'dateSent', 'isRefunded', 'osPlatform', 'point', 'price', 'sdkVersion', 'count', 'log', 'status', '_id', 'groupId', 'accountId', 'apiVersion', 'dateCreated', 'dateUpdated', 'flagUpdated', 'customFields', 'strict', 'hint', 'masterAccountId', 'prepaid', 'serviceMethod')
     })
     it('그룹 정보 조회 (생성 전)', async () => {
       const group = new Group()
