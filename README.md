@@ -4,10 +4,12 @@ You can send text messages, Kakaotalk in Korea using this package.
 ## Installing
 To use the SDK, simply use npm package manager CLI. Type the following into a terminal window.
 
+### npm
 ```bash
 npm i coolsms-node-sdk
 ```
 
+### yarn
 ```bash
 yarn add coolsms-node-sdk
 ```
