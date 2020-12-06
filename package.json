@@ -1,6 +1,6 @@
 {
   "name": "coolsms-node-sdk",
-  "version": "0.0.2",
+  "version": "4.0.16",
   "description": "Javascript 용 COOLSMS SDK Version 4",
   "main": "index.js",
   "scripts": {
