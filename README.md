@@ -8,6 +8,10 @@ To use the SDK, simply use npm package manager CLI. Type the following into a te
 npm i coolsms-node-sdk
 ```
 
+```bash
+yarn add coolsms-node-sdk
+```
+
 ## Usage
 
 ```javascript
