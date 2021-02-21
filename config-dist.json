@@ -1,7 +1,7 @@
 {
   "apiKey": "INPUT YOUR API KEY",
   "apiSecret": "INPUT YOUR API SECRET",
-  "domain": "api.solapi.com",
+  "domain": "api.coolsms.co.kr",
   "prefix": "",
   "protocol": "https",
   "accessToken": "",
