@@ -17,7 +17,7 @@ yarn add coolsms-node-sdk
 ## Usage
 
 ```javascript
-const { config, msg } = require('../')
+const { config, msg } = require('coolsms-node-sdk')
 
 // apiKey, apiSecret 설정 (설정하지 않으면 패키지 홈의 config.json 파일의 설정을 참고합니다.)
 config.init({
