@@ -1,0 +1,14 @@
+{
+  "name": "coolsms-common-examples",
+  "version": "1.0.0",
+  "description": "Common Examples for CoolSMS",
+  "keywords": [],
+  "author": {
+    "name": "Nurigo Team",
+    "email": "contact@nurigo.net"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "coolsms-node-sdk": "^2.0.1"
+  }
+}
