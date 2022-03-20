@@ -1,4 +1,4 @@
-# SOLAPI Node.js 예제 목록(JavaScript 기준)
+# CoolSMS Node.js 예제 목록(JavaScript 기준)
 
 ## 발송 예제 목록
 
