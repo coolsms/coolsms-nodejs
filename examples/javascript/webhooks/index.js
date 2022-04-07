@@ -18,7 +18,7 @@ app.post("/report", async (req, res) => {
     for (const messageId in result.messageList) {
       /**
        * 메시지 정보에서 statusCode로 메시지 상태를 확인 할 수 있습니다.
-       * 메시지 상태 코드: https://docs.solapi.com/api-reference/message-status-codes
+       * 메시지 상태 코드: https://docs.coolsms.co.kr/api-reference/message-status-codes
        * 알림톡/문자 모두 정상처리는 4000번
        */
       console.log("메시지 정보:", result.messageList[messageId]);
