@@ -1,4 +1,5 @@
 import KakaoOption from './kakaoOption';
+import { RcsOption } from './rcsOption';
 
 /**
  * @name MessageType 메시지 유형(단문 문자, 장문 문자, 알림톡 등)
@@ -92,6 +93,11 @@ export default class Message {
     kakaoOptions?: KakaoOption;
 
     /**
+     * RCS 메시지를 위한 프로퍼티
+     */
+    rcsOptions?: RcsOption;
+
+    /**
      * 해외 문자 발송을 위한 국가번호(예) "82", "1" 등)
      */
     country? = '82';
@@ -102,7 +108,7 @@ export default class Message {
     log?: Array<object>;
 
 
-    constructor(to: string, from: string, text: string, dateCreated: string, dateUpdated: string, groupId: string, messageId: string, imageId: string, type: MessageType, subject: string, autoTypeDetect: boolean, kakaoOptions: KakaoOption, country: string) {
+    constructor(to: string, from: string, text: string, dateCreated: string, dateUpdated: string, groupId: string, messageId: string, imageId: string, type: MessageType, subject: string, autoTypeDetect: boolean, kakaoOptions: KakaoOption, rcsOptions: RcsOption, country: string) {
         this.to = to;
         this.from = from;
         this.text = text;
@@ -115,6 +121,7 @@ export default class Message {
         this.subject = subject;
         this.autoTypeDetect = autoTypeDetect;
         this.kakaoOptions = kakaoOptions;
+        this.rcsOptions = rcsOptions;
         this.country = country;
     }
 }
