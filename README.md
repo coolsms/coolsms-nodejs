@@ -2,6 +2,8 @@
 
 You can send text messages(SMS, LMS, MMS), Kakao friendtalk(include notification friendtalk) in Korea using this package.  
 
+# 🛑 This SDK is no longer maintained! Please use the [SOLAPI SDK](https://github.com/solapi/solapi-nodejs) instead.
+
 ## Installing
 
 To use the SDK, simply use npm package manager CLI. Type the following into a terminal window.
